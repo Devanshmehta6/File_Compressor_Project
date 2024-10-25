@@ -87,5 +87,6 @@ def splitPDF(request):
             with open(zip_filepath, 'rb') as zipf:
                 response = HttpResponse(zipf.read(), content_type='application/zip')
                 response['Content-Disposition'] = f'attachment; filename={zip_filename}'
+                print(response)
             return response
 
