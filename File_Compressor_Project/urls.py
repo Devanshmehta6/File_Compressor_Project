@@ -21,5 +21,6 @@ from myapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home),
-    path('splitPDF/', views.splitPDF)
+    path('splitPDF/', views.splitPDF),
+    path('mergePDF/', views.mergePDF),
 ]
