@@ -23,4 +23,5 @@ urlpatterns = [
     path('home/', views.home),
     path('splitPDF/', views.splitPDF),
     path('mergePDF/', views.mergePDF),
+    path('detect_face/', views.detect_face)
 ]
